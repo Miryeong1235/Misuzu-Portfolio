@@ -1,0 +1,128 @@
+.animated-image-wrapper {
+    position: relative;
+    margin-top: 150px;
+    height: 150px;
+}
+
+
+/* Cloud */
+@keyframes moveCloud {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animated-cloud-container {
+    position: absolute;
+    z-index: -1;
+    /* Put cloud behind dokan and mario */
+    top: -200px;
+    /* put cloud on the top */
+    left: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.animated-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+    animation: moveCloud 6s linear infinite;
+    animation-delay: -1s;
+    image-rendering: pixelated;
+}
+
+
+/* Dokan */
+@keyframes moveDokan {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animated-dokan-container {
+    position: relative;
+    z-index: 0;
+    /* put dokan behind Mario */
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    /* Hide the parts that overflow outside the container */
+}
+
+.animated-dokan {
+    position: absolute;
+    image-rendering: pixelated;
+    /* pixelated image */
+    top: 0;
+    left: 0;
+    width: 80px;
+    animation: moveDokan 6s linear infinite;
+    /* speed of animation */
+}
+
+/* Coin */
+@keyframes moveCoin {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animated-coin {
+    position: absolute;
+    image-rendering: pixelated;
+    /* pixelated image */
+    top: 35px;
+    left: 0;
+    width: 30px;
+    animation: moveCoin 6s linear infinite;
+    /* speed of animation */
+}
+
+
+/* Mario */
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-mario-container {
+    position: relative;
+    z-index: 1;
+    top: -85px;
+    left: 30%;
+    /* put mario in　front of dokan */
+}
+
+.animated-mario {
+    width: 55px;
+    /* photo size*/
+    image-rendering: pixelated;
+    /* pixelated image */
+    animation: moveUpAndDown 2.5s infinite;
+    /* animation setting */
+}
