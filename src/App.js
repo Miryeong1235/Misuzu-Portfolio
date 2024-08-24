@@ -6,6 +6,7 @@ import Home from './components/Home';
 import AnimatedImage from './components/AnimatedImage';
 import Introduction from './components/Introduction';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <AnimatedImage />
       <Introduction />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
