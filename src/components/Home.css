@@ -2,3 +2,31 @@
     padding: 50px;
     text-align: center;
 }
+
+h1 {
+    padding: 0;
+    margin-bottom: 15px;
+    text-shadow: 5px 5px #2d2327;
+}
+
+.portfolio-title {
+    background-color: #b66b1f;
+    color: #f2b3a2;
+    padding: 20px;
+    text-align: left;
+    border: 5px solid #794516;
+    box-shadow: 5px 5px 0 #794516, -5px -5px 0 #794516;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+}
+
+.title1 {
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+
+    /* color: #ffcc00; */
+}

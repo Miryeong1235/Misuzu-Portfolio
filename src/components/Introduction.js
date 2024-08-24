@@ -6,7 +6,7 @@ const Introduction = () => {
     return (
         <div id="introduction" className="introduction">
 
-            <h2><img src={box} alt="Box" className="box" />Highlight of Myself</h2>
+            <h2><img src={box} alt="Box" className="box" />It's-a Me, Misuzu!</h2>
             <ul>
                 <li>Computer Science student at British Columbia Institute of Technology, Vancouver</li>
                 <li>Midwife in Japan</li>

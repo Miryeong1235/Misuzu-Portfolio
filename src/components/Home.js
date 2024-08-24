@@ -4,7 +4,11 @@ import './Home.css';
 const Home = () => {
     return (
         <div className="home">
-            <h1>🍄Welcome to My Portfolio🍄</h1>
+            <h1 className='portfolio-title'>
+                <span className='title1'>Misuzu's</span>
+                <br />
+                Portfolio
+            </h1>
         </div>
     );
 };
