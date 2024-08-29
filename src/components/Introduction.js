@@ -1,6 +1,6 @@
 import React from 'react';
 import './Introduction.css';
-import box from '../assets/box.png';
+// import box from '../assets/box.png';
 
 const Introduction = () => {
     return (

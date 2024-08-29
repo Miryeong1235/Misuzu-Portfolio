@@ -13,7 +13,7 @@ import ProjectDetail from './components/ProjectDetail';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
 
         <Header />
